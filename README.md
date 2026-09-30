@@ -1,79 +1,62 @@
-# ai-smart-public-transport-planner
-AI-powered public transport planner using computer vision,machine learning,predictive analytics and edge-AI concepts for crowd,seat,delay and route prediction
 # AI-Powered Smart Public Transport Planner
 
-## Real-Time Crowd, Seat & Route Intelligence
-
-An AI-powered public transport solution designed to help commuters make smarter travel decisions using Computer Vision, Machine Learning, GPS, traffic information and Predictive Analytics.
+An AI-powered public transport planning system designed to improve commuter experience through intelligent crowd prediction, seat availability prediction, delay prediction, and alternative route recommendation.
 
 ## Problem
 
-Public transport users often face overcrowding, uncertain seat availability, unexpected delays and difficulty choosing alternative routes.
+Public transport users often face overcrowding, uncertain seat availability, unexpected delays, and difficulty choosing alternative routes.
 
-## Proposed Solution
+## Solution
 
-The system combines multiple AI capabilities to provide real-time transport intelligence.
+The Smart Public Transport Planner uses AI and predictive analytics to provide:
 
-### Key Features
-
-- AI-based crowd prediction
+- AI-based crowd level prediction
 - Seat availability prediction
-- Smart delay and ETA prediction
+- Smart delay prediction
 - Alternative route recommendation
-- Edge-AI oriented architecture
 
-## How It Works
+## Key Features
 
-Camera / GPS / Traffic / Historical Data  
-↓  
-AI & ML Processing  
-↓  
-Crowd & Seat Prediction  
-↓  
-Delay Prediction  
-↓  
-Route Recommendation  
-↓  
-Real-Time Commuter Information
+### 1. Crowd Prediction
+Uses passenger count data to classify crowd levels as Low, Medium, or High.
 
-## AI Components
+### 2. Seat Availability
+Estimates available seats and displays:
+- Seats Available
+- Limited Seats
+- Standing Only
 
-### Crowd Prediction
-Computer Vision can be used to estimate passenger count and classify crowd levels as Low, Medium or High.
+### 3. Delay Prediction
+Combines current delay, traffic conditions, and historical delay data to estimate expected delay.
 
-### Seat Availability
-Passenger count and historical travel patterns can be used to estimate seat availability.
-
-### Delay Prediction
-GPS information, traffic conditions and historical travel patterns can be used to estimate bus arrival times.
-
-### Route Recommendation
-Current transport conditions and predicted delays can be used to recommend alternative routes.
-
-## Edge AI
-
-The system is designed with an edge-AI approach, with the intention of optimizing lightweight AI inference for Snapdragon-powered HP PCs.
-
-Potential model sources include Qualcomm AI Hub and suitable open-source AI models.
+### 4. Route Recommendation
+Compares available routes and recommends a route based on estimated travel time.
 
 ## Technology
 
 - Python
-- Computer Vision
-- Machine Learning
+- Machine Learning concepts
 - Predictive Analytics
-- GPS Data
-- Edge AI
-- Open-source AI models
+- Computer Vision integration concept
+- Edge AI concept
+- NVIDIA Jetson / Snapdragon-compatible edge deployment concept
 
-## Future Scope
+## Project Structure
 
-- Integration with real-time public transport APIs
-- Personalized route recommendations
-- Improved prediction using larger datasets
-- Optimization for Snapdragon hardware
-- Deployment across multiple cities
-
-## Project Goal
-
-To transform transport data into actionable real-time information that helps commuters make better travel decisions.
+```text
+ai-smart-public-transport-planner/
+│
+├── main.py
+├── README.md
+├── requirements.txt
+│
+└── src/
+    ├── crowd_prediction.py
+    ├── seat_prediction.py
+    ├── delay_prediction.py
+    └── route_recommendation.py
+```
+##Future Scope
+The system can be extended with real-time camera-based passenger counting, GPS data, traffic APIs, trained machine-learning models, and optimized edge-AI deployment.
+Goal
+To provide commuters with intelligent, real-time travel information and help them make better public transport decisions. 
